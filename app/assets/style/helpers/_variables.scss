@@ -75,18 +75,23 @@ $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         $gray-100 !default;
 $dark:          $gray-900 !default;
+
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
 $theme-colors: (
-  "primary":    $primary,
-  "secondary":  $secondary,
+  "primary":    #630834,
+  "secondary":  #E31277,
   "success":    $success,
   "info":       $info,
   "warning":    $warning,
   "danger":     $danger,
-  "light":      $light,
-  "dark":       $dark
+  "white":      #FFFFFF,
+  "black":       #000000,
+  "light": #EFEFEF,
+  "dark":  #707070,
+ 
+  
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -250,11 +255,15 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 $spacer: 1rem !default;
 $spacers: (
   0: 0,
-  1: $spacer * .25,
-  2: $spacer * .5,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
+  1: $spacer * .25, //4
+  2: $spacer * .5,  //8
+  3: $spacer * .75,  //12
+  4: $spacer,      //16
+  5: $spacer * 1.5,  //24
+  6: $spacer * 1.75,  //28
+  7: $spacer * 2,  //32
+  8: $spacer * 2.5,  //40
+  9: $spacer * 3, //48
 ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
@@ -267,6 +276,7 @@ $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) 
 // scss-docs-start position-map
 $position-values: (
   0: 0,
+  25: 25%,
   50: 50%,
   100: 100%
 ) !default;
@@ -451,12 +461,12 @@ $h6-font-size:                $font-size-base !default;
 
 // scss-docs-start font-sizes
 $font-sizes: (
-  1: $h1-font-size,
-  2: $h2-font-size,
-  3: $h3-font-size,
-  4: $h4-font-size,
-  5: $h5-font-size,
-  6: $h6-font-size
+  1: $h1-font-size, //40
+  2: $h2-font-size, //32
+  3: $h3-font-size, //28
+  4: $h4-font-size, //24
+  5: $h5-font-size, //20
+  6: $h6-font-size,  //16
 ) !default;
 // scss-docs-end font-sizes
 
