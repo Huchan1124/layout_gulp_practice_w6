@@ -1,32 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title><%- title %></title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/style/bootstrap.css">
-    <link rel="stylesheet" href="./assets/style/all.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/style/bootstrap.css" />
+    <link rel="stylesheet" href="./assets/style/all.css" />
   </head>
 
   <body>
-    <header class=" py-6 ">
-     <div class="container d-flex justify-content-end align-items-center position-relative">
-       <h1 class="header__title fs-4 fs-md-1 text-primary  position-absolute top-0 start-50 translate-middle-x">EXHIBINECTION</h1>
-       <div class="header__sign d-flex   ">
-         <ul class="d-flex  me-7">
-           <li class="me-7"><a href="#"  class="h6 text-dark ">Sign in</a></li>
-           <li><a href="#"  class="h6 text-dark ">Sign up</a></li>
-         </ul>
-        <span class="material-icons">
-          confirmation_number
-        </span>    
+    <header class="py-7">
+      <div
+        class="
+          container
+          d-flex
+          justify-content-end
+          align-items-center
+          position-relative
+        "
+      >
+        <h1
+          class="
+            header__title
+            fs-4 fs-md-1
+            text-primary
+            position-absolute
+            top-0
+            start-50
+            translate-middle-x
+          "
+        >
+          EXHIBINECTION
+        </h1>
+        <div class="header__sign d-flex">
+          <ul class="d-flex me-8">
+            <li class="me-8"><a href="#" class="h6 text-dark">Sign in</a></li>
+            <li><a href="#" class="h6 text-dark">Sign up</a></li>
+          </ul>
+          <span class="material-icons"> confirmation_number </span>
+        </div>
       </div>
-    </div>
-
     </header>
 
     <%- contents %>
@@ -34,9 +56,12 @@
     <!-- <footer class="footer">
       footer
     </footer> -->
-
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>
-
 </html>

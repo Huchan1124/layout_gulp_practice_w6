@@ -1,8 +1,4 @@
-.index__h1 {
-  color:#00cc99;
-  font-size: 20px;
-  font-weight: 400;
-}
+
 
 
 .banner {
@@ -11,5 +7,27 @@
   background: url("../images/banner.jpg") no-repeat;
   background-size: cover;
   background-position: center;
-  outline: 1px solid red;
 }
+
+
+.nav {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  white-space:nowrap; 
+}
+
+.nav-link {
+  width: 64px;
+  transition: border-bottom 1s;
+  &:hover {
+    border-bottom: 1px solid ;
+    border-color: $secondary;
+
+  }
+
+  
+}
+
+
+
