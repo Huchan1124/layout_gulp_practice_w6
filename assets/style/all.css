@@ -13706,6 +13706,10 @@ fieldset:disabled .btn {
   }
 }
 
+body {
+  font-family: Arial, 'Noto Sans TC' ,Helvetica, sans-serif;
+}
+
 body * {
   outline: solid 1px #00cc99;
   padding: 0;
@@ -13724,6 +13728,15 @@ a {
   color: #00cc99;
   font-size: 20px;
   font-weight: 400;
+}
+
+.banner {
+  width: 100%;
+  height: 480px;
+  background: url("../images/banner.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  outline: 1px solid red;
 }
 
 /*# sourceMappingURL=all.css.map */
