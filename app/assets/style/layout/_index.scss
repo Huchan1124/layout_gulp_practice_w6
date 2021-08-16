@@ -29,5 +29,24 @@
   
 }
 
+.popularExhibition__content {
+  margin-bottom: 20px;
+  &__img {
+
+    img {
+      height: 350px;
+      object-fit: cover;
+
+    }
+
+  }
+  &__text {
+    height: 100%;
+  }
+
+ 
+}
+
+
 
 
