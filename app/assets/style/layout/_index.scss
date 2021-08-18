@@ -11,20 +11,24 @@
 
 
 .nav {
-  outline: 1px solid red;
+  // outline: 1px solid red;
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
   white-space:nowrap; 
 }
 
+
+
+//  .nav-link 加上 border-bottom: 1px solid transparent;(透明) 就可以解決抖動問題了
 .nav-link {
-  outline: 1px solid red;
+  // outline: 1px solid red;
   width: 64px;
-  transition: border-bottom 1s;
+  transition:  border-bottom .5s;
+  border-bottom: 1px solid transparent;
   &:hover {
-    border-bottom: 1px solid ;
-    border-color: $secondary;
+    border-bottom: 1px solid $secondary;
+ 
 
   }
 
@@ -68,20 +72,7 @@
   text-align: center;
   font-size: 18px;
   background: #fff;
-
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
+  width: auto !important;
 }
 
 .swiper-slide img {
@@ -89,4 +80,18 @@
   width: 350px;
   height: 350px;
   object-fit: cover;
+}
+
+
+.contact {
+  width: 100%;
+  height: 400px;
+  background: url("../images/contact.jpg") no-repeat;
+  background-position: center  ;
+  background-size: cover;
+  padding: 36px 85px;
+
+  &__title {
+    line-height: 48px;
+  }
 }
