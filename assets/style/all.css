@@ -14424,6 +14424,12 @@ fieldset:disabled .btn {
   }
 }
 
+@media (min-width: 768px) {
+  .fs-md-2 {
+    font-size: 2rem !important;
+  }
+}
+
 body {
   font-family: Arial, Roboto, 'Noto Sans TC' ,Helvetica, sans-serif;
 }
