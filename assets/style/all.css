@@ -14527,11 +14527,28 @@ small, .small {
   height: 400px;
   background: url("../images/contact.jpg") no-repeat center;
   background-size: cover;
-  padding: 36px 85px;
+  padding: 36px 0px;
+}
+
+@media (min-width: 768px) {
+  .contact {
+    padding: 36px 85px;
+  }
 }
 
 .contact__title {
-  line-height: 48px;
+  line-height: 36px;
+  margin-bottom: 22px;
+}
+
+@media (min-width: 768px) {
+  .contact__title {
+    line-height: 48px;
+  }
+}
+
+.contact .input-group__btn {
+  width: 37%;
 }
 
 /*# sourceMappingURL=all.css.map */
