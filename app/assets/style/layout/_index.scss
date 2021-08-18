@@ -80,15 +80,25 @@
   height: 400px;
   background: url("../images/contact.jpg") no-repeat center ;
   background-size: cover;
-  
-  padding: 36px 85px;
- 
-  
+  padding:36px 0px;
+  @include media-breakpoint-up(md) {
+   
+    
+    padding: 36px 85px;
+}
 
   &__title {
-    line-height: 48px;
+    line-height:36px;
+    margin-bottom: 22px;
+  @include media-breakpoint-up(md) {
+      line-height: 48px ;
+    }
+  }
+
+  .input-group__btn {
+    width: 37% ;
   }
 
  
-}
 
+}
