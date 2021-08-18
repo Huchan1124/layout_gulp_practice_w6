@@ -1,6 +1,4 @@
 
-
-
 .banner {
   width: 100%;
   height: 480px;
@@ -28,23 +26,17 @@
   border-bottom: 1px solid transparent;
   &:hover {
     border-bottom: 1px solid $secondary;
- 
-
   }
-
   
 }
 
 .popularExhibition__content {
   margin-bottom: 20px;
   &__img {
-
     img {
       height: 350px;
       object-fit: cover;
-
     }
-
   }
   &__text {
     height: 100%;
@@ -86,12 +78,17 @@
 .contact {
   width: 100%;
   height: 400px;
-  background: url("../images/contact.jpg") no-repeat;
-  background-position: center  ;
+  background: url("../images/contact.jpg") no-repeat center ;
   background-size: cover;
+  
   padding: 36px 85px;
+ 
+  
 
   &__title {
     line-height: 48px;
   }
+
+ 
 }
+
