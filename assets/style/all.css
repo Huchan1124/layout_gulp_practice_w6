@@ -14451,8 +14451,32 @@ small, .small {
   font-family: Roboto;
 }
 
-.footer {
-  padding: 0 85px;
+@media (min-width: 768px) {
+  .footer__copyright {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.footer .footer__sign {
+  visibility: hidden;
+}
+
+@media (min-width: 768px) {
+  .footer .footer__sign {
+    visibility: visible;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+    padding: 0 85px;
+  }
 }
 
 .banner {
