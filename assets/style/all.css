@@ -14487,7 +14487,14 @@ small, .small {
   background-position: center;
 }
 
-.nav {
+.nav-scroller {
+  height: 3.31rem;
+  border-bottom: 1px solid #9b4848;
+  outline: 1px solid red;
+}
+
+.nav-scroller .nav {
+  outline: 1px solid blue;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
