@@ -14489,6 +14489,7 @@ small, .small {
 
 .nav-scroller {
   height: 3.31rem;
+  overflow-y: hidden;
   border-bottom: 1px solid #9b4848;
   outline: 1px solid red;
 }
@@ -14502,6 +14503,7 @@ small, .small {
       flex-wrap: nowrap;
   overflow-x: auto;
   white-space: nowrap;
+  padding-bottom: 1rem;
 }
 
 .nav-link {
@@ -14514,6 +14516,10 @@ small, .small {
 
 .nav-link:hover {
   border-bottom: 1px solid #E31277;
+}
+
+.popularExhibition, .liveReview, .recommend {
+  outline: red solid 1px;
 }
 
 .popularExhibition__content {
