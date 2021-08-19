@@ -5034,7 +5034,7 @@ fieldset:disabled .btn {
 }
 
 .navbar-toggler {
-  padding: 0.25rem 0.75rem;
+  padding: 0.25rem 0.25rem;
   font-size: 1.25rem;
   line-height: 1;
   background-color: transparent;
@@ -20852,6 +20852,26 @@ small, .small {
   }
 }
 
+.header {
+  outline: #4400ff solid 1px;
+}
+
+.header .container {
+  outline: orangered solid 1px;
+}
+
+.header .container .header__sign {
+  outline: orangered solid 1px;
+}
+
+.header .container .header__sign .navbar-nav {
+  outline: #002fff solid 1px;
+}
+
+.header .container .header__sign .navbar-nav a {
+  outline: #002fff solid 1px;
+}
+
 .banner {
   width: 100%;
   height: 480px;
@@ -20878,7 +20898,7 @@ small, .small {
   padding-bottom: 1rem;
 }
 
-.nav-link {
+.nav-scroller .nav-link {
   width: 64px;
   -webkit-transition: border-bottom .5s;
   -o-transition: border-bottom .5s;
@@ -20886,7 +20906,7 @@ small, .small {
   border-bottom: 1px solid transparent;
 }
 
-.nav-link:hover {
+.nav-scroller .nav-link:hover {
   border-bottom: 1px solid #E31277;
 }
 
