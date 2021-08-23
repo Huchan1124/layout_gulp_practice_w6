@@ -20852,24 +20852,14 @@ small, .small {
   }
 }
 
-.header {
-  outline: #4400ff solid 1px;
+@media (max-width: 767.98px) {
+  .header__title {
+    top: 8px !important;
+  }
 }
 
-.header .container {
-  outline: orangered solid 1px;
-}
-
-.header .container .header__sign {
-  outline: orangered solid 1px;
-}
-
-.header .container .header__sign .navbar-nav {
-  outline: #002fff solid 1px;
-}
-
-.header .container .header__sign .navbar-nav a {
-  outline: #002fff solid 1px;
+.navbar-toggler-icon {
+  visibility: hidden;
 }
 
 .banner {
@@ -20883,17 +20873,19 @@ small, .small {
 .nav-scroller {
   height: 3.31rem;
   overflow-y: hidden;
-  border-bottom: 1px solid #9b4848;
-  outline: 1px solid red;
+  border-bottom: 1px solid #948787;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .nav-scroller .nav {
-  outline: 1px solid blue;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+  overflow-x: auto;
   white-space: nowrap;
   padding-bottom: 1rem;
 }
