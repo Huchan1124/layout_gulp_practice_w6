@@ -1,24 +1,14 @@
-.header {
-  outline: rgb(68, 0, 255) solid 1px;
-  .container {
-    outline: orangered solid 1px;
-    .header__sign {
-      outline: orangered solid 1px;
-      .navbar-nav {
-        outline: rgb(0, 47, 255) solid 1px;
-        a {
-          outline: rgb(0, 47, 255) solid 1px;
-        }
-     
-      }
+.header__title {
 
-      
-    }
+  @include media-breakpoint-down(md) {
+    top: 8px !important;
   }
+  
 }
 
-
-
+.navbar-toggler-icon {
+  visibility: hidden;
+}
 
 .banner {
   width: 100%;
@@ -31,21 +21,19 @@
 .nav-scroller {
   height:3.31rem; //隱藏橫向捲軸
   overflow-y: hidden; //隱藏橫向捲軸
-  border-bottom: 1px solid #9b4848;
-  outline: 1px solid rgb(255, 0, 0);
+  border-bottom: 1px solid #948787;
+  justify-content: center;
  
   .nav {
-  outline: 1px solid blue;
   display: flex;
   flex-wrap: nowrap;
-  //overflow-x: auto; //超出X軸 出現橫向捲軸
+  overflow-x: auto; //超出X軸 出現橫向捲軸
   white-space:nowrap; 
   padding-bottom: 1rem;
 }
 
 //  .nav-link 加上 border-bottom: 1px solid transparent;(透明) 就可以解決抖動問題了
 .nav-link {
-  // outline: 1px solid red;
   width: 64px;
   transition:  border-bottom .5s;
   border-bottom: 1px solid transparent;
@@ -58,9 +46,6 @@
 
 
 
-.popularExhibition , .liveReview, .recommend {
-  // outline: red solid 1px;
-}
 .popularExhibition__content {
   margin-bottom: 20px;
   &__img {
