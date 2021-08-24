@@ -20872,6 +20872,7 @@ small, .small {
 
 .nav-scroller {
   height: 3.31rem;
+  overflow-y: hidden;
   border-bottom: 1px solid #948787;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
